@@ -1,0 +1,11 @@
+/Users/ct777/CGI/Battleship/src/Battleship/bin/Debug/netcoreapp3.0/Battleship
+/Users/ct777/CGI/Battleship/src/Battleship/bin/Debug/netcoreapp3.0/Battleship.deps.json
+/Users/ct777/CGI/Battleship/src/Battleship/bin/Debug/netcoreapp3.0/Battleship.runtimeconfig.json
+/Users/ct777/CGI/Battleship/src/Battleship/bin/Debug/netcoreapp3.0/Battleship.runtimeconfig.dev.json
+/Users/ct777/CGI/Battleship/src/Battleship/bin/Debug/netcoreapp3.0/Battleship.dll
+/Users/ct777/CGI/Battleship/src/Battleship/bin/Debug/netcoreapp3.0/Battleship.pdb
+/Users/ct777/CGI/Battleship/src/Battleship/obj/Debug/netcoreapp3.0/Battleship.csprojAssemblyReference.cache
+/Users/ct777/CGI/Battleship/src/Battleship/obj/Debug/netcoreapp3.0/Battleship.AssemblyInfoInputs.cache
+/Users/ct777/CGI/Battleship/src/Battleship/obj/Debug/netcoreapp3.0/Battleship.AssemblyInfo.cs
+/Users/ct777/CGI/Battleship/src/Battleship/obj/Debug/netcoreapp3.0/Battleship.dll
+/Users/ct777/CGI/Battleship/src/Battleship/obj/Debug/netcoreapp3.0/Battleship.pdb
