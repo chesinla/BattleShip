@@ -31,7 +31,7 @@ static void Setup()
 		GameLoop();
 		DisplayWinner();
 		Restart();
-        /* const int GRID_SIZE = 10;
+        /*  const int GRID_SIZE = 10;
 		List<Ship> defaultShipList = new List<Ship>();
 		defaultShipList.Add(new Ship("Battleship", 'B', 3));
 		List<Player> players = new List<Player>();
