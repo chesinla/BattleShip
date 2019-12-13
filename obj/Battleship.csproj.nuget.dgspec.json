@@ -1,25 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ct777/CGI/Battleship/src/Battleship/Battleship.csproj": {}
+    "C:\\Users\\sean.gannon\\Documents\\Battleship\\BattleShip\\Battleship.csproj": {}
   },
   "projects": {
-    "/Users/ct777/CGI/Battleship/src/Battleship/Battleship.csproj": {
+    "C:\\Users\\sean.gannon\\Documents\\Battleship\\BattleShip\\Battleship.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ct777/CGI/Battleship/src/Battleship/Battleship.csproj",
+        "projectUniqueName": "C:\\Users\\sean.gannon\\Documents\\Battleship\\BattleShip\\Battleship.csproj",
         "projectName": "Battleship",
-        "projectPath": "/Users/ct777/CGI/Battleship/src/Battleship/Battleship.csproj",
-        "packagesPath": "/Users/ct777/.nuget/packages/",
-        "outputPath": "/Users/ct777/CGI/Battleship/src/Battleship/obj/",
+        "projectPath": "C:\\Users\\sean.gannon\\Documents\\Battleship\\BattleShip\\Battleship.csproj",
+        "packagesPath": "C:\\Users\\sean.gannon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sean.gannon\\Documents\\Battleship\\BattleShip\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/Users/ct777/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\sean.gannon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -50,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
