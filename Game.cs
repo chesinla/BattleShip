@@ -29,44 +29,85 @@ using System.Collections.Generic;
  
 public class Game
 {
+	readonly static int BOARD_SIZE;
+
+	static Game(){
+		BOARD_SIZE = 10;
+	}
 
 	static void Setup()
 	{
 		Console.WriteLine("Please place your ships");
-
-
-
 	}
-
-
-
 
 	static void Main()
 	{
+		Console.WriteLine("game board is this big: {0}", Game.BOARD_SIZE);
+		Game.Welcome(); 
+		//Initilzation of Objects
+		Game.CreatePlayers();
+		Game.CreateGrids();
+		Game.CreateShips();
 
-		Game.Welcome();
+		//Setup - player specific
+		Game.PlaceShips();
+		
+		//Start game
 		Game.GameLoop();
 		Game.DisplayWinner();
 		Game.Restart();
 	}
+
+  private static void PlaceShips()
+  {
+    //throw new NotImplementedException();
+  }
+
+  private static void CreateShips()
+  {
+    //throw new NotImplementedException();
+  }
+
+
+  private static void CreateGrids()
+  {
+    // new NotImplementedException();
+  }
+
+  /**
+    Create 2 players
+    validate there exists two plaers
+    assign each player a neme of P1 p2
+   */
+  private static Player CreatePlayers()
+  {
+    //throw new NotImplementedException();
+		return null;
+  }
+
+  /**
+		Displays welcome text
+	 */
   private static void Welcome()
   {
-    throw new NotImplementedException();
+    View.Welcome();
   }
  
+
+
   private static void GameLoop()
   {
-    throw new NotImplementedException();
+    //
   }
 
   private static void DisplayWinner()
   {
-    throw new NotImplementedException();
+    //
   }
 
  	private static void Restart()
   {
-    throw new NotImplementedException();
+    //
   }
 
 

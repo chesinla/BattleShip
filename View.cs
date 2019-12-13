@@ -4,7 +4,7 @@ using System;
 public class View
 
 {
-    static void Welcome()
+    public static void Welcome()
     {
         Console.WriteLine("Welcome to battleship!!!");
         View.PauseForUserInput("Press any key to continue");
@@ -14,6 +14,9 @@ public class View
     {
         Console.WriteLine(prompt);
         Console.ReadKey();
+
+        int x  = View.CaptureNumber("enter some test strings here");
+        Console.WriteLine("the value entered is {0}", x);
         //User presses Enter to call createPlayer() 
 
     }
@@ -33,14 +36,19 @@ public class View
         // }
     }
 
-    /* static void validatePlayers()
-    {
-        if(numberOfPlayers != 2)
-        {
-            Console.WriteLine("There has been an error restart game");
+/**
+    Sean get good at c# you are embarassing yourself
+    get googd
 
+ */
+    static int CaptureNumber(string prompt){
+        Console.WriteLine(prompt);
+        int output;
+        while(!Int32.TryParse(Console.ReadLine(), out output)){
+            Console.WriteLine("you blew it, and I don't mean a hit on their battle ship. Try again. :)");
         }
+        return output;
+    }
 
 
-    }*/ 
 }
