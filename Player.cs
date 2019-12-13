@@ -11,7 +11,7 @@ class Player
     public Gameboard gameBoard {get;set;}
 	//gitpublic int numberOfPlayers {get; set;}
 
-public Player(int playerNumber, string playerName, int gridSize,)
+public Player(int playerNumber, string playerName, int gridSize)
 	{
 		this.playerNumber = playerNumber;
 		this.playerName = playerName;
