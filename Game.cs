@@ -2,30 +2,6 @@
 using System.Collections.Generic;
 
 
-/**
-
-		const int GRID_SIZE = 10;
-		List<Ship> defaultShipList = new List<Ship>();
-		defaultShipList.Add(new Ship("Battleship", 'B', 3));
-		List<Player> players = new List<Player>();
-				
-				Gameboard testG = new Gameboard();
-
-				//set up players
-		Player player1 = new Player(0, "Player1", GRID_SIZE);
-		Player player2 = new Player(1, "player2", GRID_SIZE);
-		
-		players.Add(player1);
-		players.Add(player2);
-		
-		//add ships and collect location of ships
-		foreach(Player p in players){
-			foreach(Ship s in defaultShipList){
-				p.shipList.Add(s);
-				//maybe get from the console the location of the ship and add it to the player's board
-			}
-		}
-	*/ 
  
 public class Game
 {
@@ -65,37 +41,6 @@ public class Game
 		Game.Restart();
 	}
 
-  private static void PlaceShips()
-  {
-    //throw new NotImplementedException();
-  }
-
-  private static void CreateShips()
-  {
-    //throw new NotImplementedException();
-  }
-
-
-  private static void CreateGrids()
-  {
-    // new NotImplementedException();
-  }
-
-  /**
-    Create 2 players
-    validate there exists two plaers
-    assign each player a neme of P1 p2
-   */
-  private static Player CreatePlayers()
-  {
-    //throw new NotImplementedException();
-		return null;
-  }
-
-  /**
-		Displays welcome text
-	 */
-
 
 
 
@@ -108,16 +53,31 @@ public class Game
   {
 	if (View.PauseForUserInput("You are Player 1") == true)
 		player1 = new Player(1, player1, 10, 1);
-		/**
+			return null;
+		
+		(View.PauseForUserInput("You are Player 2") == true);
+		player2 = new Player(2, player2, 10, 2);
+			return null;
+
+
+	/*
     Create 2 players
     validate there exists two plaers
-    assign each player a neme of P1 p2
+    assign each player a name of P1 p2
    */
 
   }
 
-		private static void ValidatePlayerCount()
+		public static void ValidatePlayerCount(int playerCount)
 	{
+		if(Player.playerCount == 2);
+		{
+			Console.WriteLine("There are two players in the game");
+		}
+		else
+		{
+			Console.WriteLine("There is an error, only 2 players allowed in this game");
+		}
 		//validate amount of players,
 		// doesnt have to be 2, initial version will be 2 for functionality but can change in player class
 		
@@ -178,3 +138,28 @@ public class Game
 
 
 }
+
+/**
+
+		const int GRID_SIZE = 10;
+		List<Ship> defaultShipList = new List<Ship>();
+		defaultShipList.Add(new Ship("Battleship", 'B', 3));
+		List<Player> players = new List<Player>();
+				
+				Gameboard testG = new Gameboard();
+
+				//set up players
+		Player player1 = new Player(0, "Player1", GRID_SIZE);
+		Player player2 = new Player(1, "player2", GRID_SIZE);
+		
+		players.Add(player1);
+		players.Add(player2);
+		
+		//add ships and collect location of ships
+		foreach(Player p in players){
+			foreach(Ship s in defaultShipList){
+				p.shipList.Add(s);
+				//maybe get from the console the location of the ship and add it to the player's board
+			}
+		}
+	*/ 
