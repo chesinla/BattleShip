@@ -45,8 +45,15 @@ public class Game
 		Console.WriteLine("game board is this big: {0}", Game.BOARD_SIZE);
 		Game.Welcome(); 
 		//Initilzation of Objects
+
 		Game.CreatePlayers();
+
+
+		//Game Logic to check # of players
+		Game.ValidatePlayerCount(playerCount);
+
 		Game.CreateGrids();
+
 		Game.CreateShips();
 
 		//Setup - player specific
@@ -88,11 +95,68 @@ public class Game
   /**
 		Displays welcome text
 	 */
+
+
+
+
   private static void Welcome()
   {
     View.Welcome();
   }
+
+	  private static void CreatePlayers()
+  {
+	if (View.PauseForUserInput("You are Player 1") == true)
+		player1 = new Player(1, player1, 10, 1);
+		/**
+    Create 2 players
+    validate there exists two plaers
+    assign each player a neme of P1 p2
+   */
+
+  }
+
+		private static void ValidatePlayerCount()
+	{
+		//validate amount of players,
+		// doesnt have to be 2, initial version will be 2 for functionality but can change in player class
+		
+
+	}
  
+  private static void CreateGrids()
+  {
+    // Create 2 Grids foreach player created,
+		//naming convention will show as offensive and defensive grid
+		//Grids will both need to be the same size
+		//for each defensive grid created create one set of ships as defined in createShips()
+  }
+
+	 private static void CreateShips()
+  {
+	
+		
+		//create ships in sets,
+		// 1 set contains 3 ships, [Carrier, Submarine, Destroyer]
+		// forEach player created, assign player 1 set of ships in their playerShipSet
+		// check conditional that forEach player, playerShipSet contains 1 set of Ships, 
+		// shipSet can be altered in Ship class considering size of Grid and logical amount of empty spaces
+		//player will always only have 1 set of ships, Grid_size and number of Ships&length of ships can change within Ships.cs class
+		
+
+    //throw new NotImplementedException();
+  }
+
+
+ private static void PlaceShips()
+  {
+		//this function will interact with View, as the user will use console to place their ships
+		// will be able to view grid in console and input a concurrent array of numbers on the grid to place ships
+		//first ship placed will be Carrier, user will input an array of integers that must be in order whether vertically or horizontally, (x or y) 
+
+    //throw new NotImplementedException();
+  }
+
 
 
   private static void GameLoop()
@@ -102,7 +166,9 @@ public class Game
 
   private static void DisplayWinner()
   {
-    //
+    //once a winner is determined in GameLoop(), which will be determined by a looping through the amount of sunken ships, if number of ships == number of sunken ships the other player is = winningPlayer(logic will need work)
+
+		Console.WriteLine("Congratulations {0} is the winner", winningPlayer);
   }
 
  	private static void Restart()
