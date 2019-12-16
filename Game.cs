@@ -28,6 +28,8 @@ public class Game
 		//Game Logic to check # of players
 		Game.ValidatePlayerCount(playerCount);
 
+
+		//Once Correct PlayerCount is validated, the players Grids and Ships will be created and validated
 		Game.CreateGrids();
 
 		Game.CreateShips();
@@ -44,48 +46,46 @@ public class Game
 
 
 
-  private static void Welcome()
+private static void Welcome()
   {
     View.Welcome();
   }
 
-	  private static void CreatePlayers()
+private static void CreatePlayers()
+
   {
+	List<Player> Players = new List<Player>();
+
 	if (View.PauseForUserInput("You are Player 1") == true)
-		player1 = new Player(1, player1, 10, 1);
-			return null;
-		
-		(View.PauseForUserInput("You are Player 2") == true);
-		player2 = new Player(2, player2, 10, 2);
-			return null;
+	player1 = new Player(1, player1, 10, 1);
+					
+	if (View.PauseForUserInput("You are Player 2") == true)
+	player2 = new Player(2, player2, 10, 2);
 
-
-	/*
-    Create 2 players
-    validate there exists two plaers
-    assign each player a name of P1 p2
-   */
-
-  }
-
-		public static void ValidatePlayerCount(int playerCount)
+	numberOfPlayers = 0;	
+	foreach(int Player in Players)
 	{
-		if(Player.playerCount == 2);
+		numberOfPlayers++;
+	}
+	ValidatePlayerCount();
+
+   }
+
+	public static void ValidatePlayerCount(int numberOfPlayers)
+	{		
+		if(numberOfPlayers == 2)
 		{
-			Console.WriteLine("There are two players in the game");
+			bool correctNumOfPlayers = true;
 		}
 		else
 		{
-			Console.WriteLine("There is an error, only 2 players allowed in this game");
+			bool correctNumOfPlayers = false;
 		}
-		//validate amount of players,
-		// doesnt have to be 2, initial version will be 2 for functionality but can change in player class
-		
-
 	}
  
   private static void CreateGrids()
   {
+	
     // Create 2 Grids foreach player created,
 		//naming convention will show as offensive and defensive grid
 		//Grids will both need to be the same size
