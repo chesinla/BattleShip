@@ -20,3 +20,8 @@ C:\Users\sean.gannon\Documents\Battleship\BattleShip\obj\Debug\netcoreapp3.0\Bat
 C:\Users\sean.gannon\Documents\Battleship\BattleShip\obj\Debug\netcoreapp3.0\Battleship.AssemblyInfo.cs
 C:\Users\sean.gannon\Documents\Battleship\BattleShip\obj\Debug\netcoreapp3.0\Battleship.dll
 C:\Users\sean.gannon\Documents\Battleship\BattleShip\obj\Debug\netcoreapp3.0\Battleship.pdb
+c:\Users\chester.thomas\Desktop\BattleShip\battleship\BattleShip\obj\Debug\netcoreapp3.0\Battleship.csprojAssemblyReference.cache
+c:\Users\chester.thomas\Desktop\BattleShip\battleship\BattleShip\obj\Debug\netcoreapp3.0\Battleship.AssemblyInfoInputs.cache
+c:\Users\chester.thomas\Desktop\BattleShip\battleship\BattleShip\obj\Debug\netcoreapp3.0\Battleship.AssemblyInfo.cs
+c:\Users\chester.thomas\Desktop\BattleShip\battleship\BattleShip\obj\Debug\netcoreapp3.0\Battleship.dll
+c:\Users\chester.thomas\Desktop\BattleShip\battleship\BattleShip\obj\Debug\netcoreapp3.0\Battleship.pdb

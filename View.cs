@@ -21,22 +21,27 @@ public class View
 
     }
 
-    public static void View.createPlayers()
+    public static void playersStartGame()
     {
         Console.WriteLine("Player 1 press any key");
-        View.PauseForUserInput("You are Player 1");
-        
-        
-        // Player player1 = new Player(1, "player1", 10, 1);
+        View.PauseForUserInput("You are Player 1");     
         Console.WriteLine("Player 2 press any key");
         View.PauseForUserInput("You are Player 2");
-        // Player player2 = new Player(2, "player2", 10, 2);
-        // bool playerCount = true;
-        // if(numberOfPlayers != 2)
-        // {
-            
-        // }
+        if(correctNumOfPlayers = true)
+        {
+            Console.WriteLine("There are two ready players in the game");
+        }
+        else
+        {
+            Console.WriteLine("There has been an error, restarting game");
+        }
+        Welcome();
     }
+
+
+
+
+
 
 
     static int CaptureNumber(string prompt){
