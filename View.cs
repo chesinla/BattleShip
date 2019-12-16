@@ -21,10 +21,12 @@ public class View
 
     }
 
-    static void createPlayer()
+    public static void View.createPlayers()
     {
         Console.WriteLine("Player 1 press any key");
         View.PauseForUserInput("You are Player 1");
+        
+        
         // Player player1 = new Player(1, "player1", 10, 1);
         Console.WriteLine("Player 2 press any key");
         View.PauseForUserInput("You are Player 2");
@@ -36,11 +38,7 @@ public class View
         // }
     }
 
-/**
-    Sean get good at c# you are embarassing yourself
-    get googd
 
- */
     static int CaptureNumber(string prompt){
         Console.WriteLine(prompt);
         int output;
