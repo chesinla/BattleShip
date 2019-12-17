@@ -21,28 +21,14 @@ public class View
 
     }
 
-    public static void playersStartGame()
-    {
+    public static void playersStartGame(bool playersReady = false)
+    {   playersReady = false;
         Console.WriteLine("Player 1 press any key");
         View.PauseForUserInput("You are Player 1");     
         Console.WriteLine("Player 2 press any key");
         View.PauseForUserInput("You are Player 2");
-        if(correctNumOfPlayers = true)
-        {
-            Console.WriteLine("There are two ready players in the game");
-        }
-        else
-        {
-            Console.WriteLine("There has been an error, restarting game");
-        }
-        Welcome();
+        playersReady = true;
     }
-
-
-
-
-
-
 
     static int CaptureNumber(string prompt){
         Console.WriteLine(prompt);
