@@ -1,5 +1,5 @@
 using System;
-
+using System.Collections;
 
 //https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/multidimensional-arrays
 class Gameboard

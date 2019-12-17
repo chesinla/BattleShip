@@ -21,13 +21,13 @@ public class View
 
     }
 
-    public static void playersStartGame(bool playersReady = false)
-    {   playersReady = false;
+    public static bool arePlayersReady()
+    { 
         Console.WriteLine("Player 1 press any key");
         View.PauseForUserInput("You are Player 1");     
         Console.WriteLine("Player 2 press any key");
         View.PauseForUserInput("You are Player 2");
-        playersReady = true;
+        return true;
     }
 
     static int CaptureNumber(string prompt){
