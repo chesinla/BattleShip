@@ -2,18 +2,13 @@
 using System.Collections.Generic;
 
 
- 
 public class Game
 {
 	readonly static int BOARD_SIZE;
 
-	static Game(){
-		BOARD_SIZE = 10;
-	}
-
-	static void Setup()
+	static Game()
 	{
-		Console.WriteLine("Please place your ships");
+		BOARD_SIZE = 10;
 	}
 
 	static void Main()
@@ -23,10 +18,10 @@ public class Game
 		//Initilzation of Objects
 
 		Game.CreatePlayers();
-
+		Game.playersStartGame();
 
 		//Game Logic to check # of players
-		Game.ValidatePlayerCount(playerCount);
+		Game.ValidatePlayerCount(numberOfPlayers);
 
 
 		//Once Correct PlayerCount is validated, the players Grids and Ships will be created and validated
@@ -51,38 +46,27 @@ private static void Welcome()
     View.Welcome();
   }
 
-private static void CreatePlayers()
-
+	private static void CreatePlayers()
   {
-	List<Player> Players = new List<Player>();
-
-	if (View.PauseForUserInput("You are Player 1") == true)
-	player1 = new Player(1, player1, 10, 1);
-					
-	if (View.PauseForUserInput("You are Player 2") == true)
-	player2 = new Player(2, player2, 10, 2);
-
-	numberOfPlayers = 0;	
-	foreach(int Player in Players)
-	{
-		numberOfPlayers++;
+		View.playersStartGame(playersReady);
+		List<Player> Players = new List<Player>();
+		var player1 = new Player(1, "player1", 10, 1);
+		var player2 = new Player(2, "player2", 10, 2);
 	}
-	ValidatePlayerCount();
 
-   }
-
-	public static void ValidatePlayerCount(int numberOfPlayers)
-	{		
-		if(numberOfPlayers == 2)
-		{
-			bool correctNumOfPlayers = true;
-		}
-		else
-		{
-			bool correctNumOfPlayers = false;
-		}
+	static void ValidatePlayerCount(int numberOfPlayers)
+	{	
+		int numberOfPlayers = 0;	
+			foreach(Player p in Players)
+			{
+				numberOfPlayers++;
+			}
 	}
- 
+
+ private static void playersStartGame()
+ {
+	 View.playersStartGame(playersReady);
+ }
   private static void CreateGrids()
   {
 	
@@ -128,13 +112,13 @@ private static void CreatePlayers()
   {
     //once a winner is determined in GameLoop(), which will be determined by a looping through the amount of sunken ships, if number of ships == number of sunken ships the other player is = winningPlayer(logic will need work)
 
-		Console.WriteLine("Congratulations {0} is the winner", winningPlayer);
+		Console.WriteLine("Congratulations {0} is the winner");
   }
 
  	private static void Restart()
-  {
-    //
-  }
+	 {
+
+	 }
 
 
 }

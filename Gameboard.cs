@@ -1,6 +1,5 @@
 using System;
-using System.Windows.Controls.Panel;
-using System.Windows.Controls.Primitives.SelectiveScrollingGrid;
+
 
 //https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/multidimensional-arrays
 class Gameboard
