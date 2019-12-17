@@ -16,7 +16,7 @@ public Player(int playerNumber, string playerName, int gridSize, int playerCount
 		this.playerNumber = playerNumber;
 		this.playerName = playerName;
 		this.gameBoard = new Gameboard();
-		this.gameBoard.grid = new char[gridSize,gridSize];
+		this.gameBoard.Grid = new char[gridSize,gridSize];
 		this.shipList = new List<Ship>();
 		this.playerCount = playerCount;
 		

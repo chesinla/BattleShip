@@ -5,10 +5,14 @@ using System.Collections.Generic;
 public class Game
 {
 	readonly static int BOARD_SIZE;
+	readonly static int NUMBER_OF_PLAYERS;
+
+	private static List<Player> Players;
 
 	static Game()
 	{
 		BOARD_SIZE = 10;
+		NUMBER_OF_PLAYERS = 2;
 	}
 
 	static void Main()
@@ -19,10 +23,7 @@ public class Game
 
 		Game.CreatePlayers();
 		Game.playersStartGame();
-
-		//Game Logic to check # of players
-		Game.ValidatePlayerCount(numberOfPlayers);
-
+		
 
 		//Once Correct PlayerCount is validated, the players Grids and Ships will be created and validated
 		Game.CreateGrids();
@@ -38,34 +39,29 @@ public class Game
 		Game.Restart();
 	}
 
-
-
-
 private static void Welcome()
   {
     View.Welcome();
   }
 
-	private static void CreatePlayers()
+	private static List<Player> CreatePlayers()
   {
-		View.playersStartGame(playersReady);
-		List<Player> Players = new List<Player>();
-		var player1 = new Player(1, "player1", 10, 1);
-		var player2 = new Player(2, "player2", 10, 2);
+		List<Player> players = new List<Player>();
+		for(int i = 0; i < NUMBER_OF_PLAYERS; i++){
+			Player player1 = new Player(1, "player1", 10, 1);
+			Players.Add(player1);
+		}
+		return Players;
+
 	}
 
-	static void ValidatePlayerCount(int numberOfPlayers)
-	{	
-		int numberOfPlayers = 0;	
-			foreach(Player p in Players)
-			{
-				numberOfPlayers++;
-			}
-	}
 
  private static void playersStartGame()
- {
-	 View.playersStartGame(playersReady);
+ {	
+	 while(arePlayersReady())
+	 {
+		 CreateGrids();
+	 }
  }
   private static void CreateGrids()
   {
